@@ -1,5 +1,5 @@
 
-# 🌱 Plant Leaf Disease Multilevel Classification Using Few-Shot Learning
+# Plant Leaf Disease Multilevel Classification Using Few-Shot Learning
 
 ### Final Year Project — BE Computer Engineering (Data Science)
 
@@ -7,7 +7,7 @@
 **Note** - Change timer of layout.html if doesn't work or comment that lines respectively in that file
 For eg - <body id="page-top" data-load="1755263755"> to <body id="page-top">
 
-## 📌 **Project Overview**
+##  **Project Overview**
 
 Plant diseases cause major crop losses every year, especially in rural areas where farmers may not have access to experts. Early and accurate disease detection can help prevent these losses. However:
 
@@ -23,7 +23,7 @@ We also created a **Flask-based web app** where users can upload a leaf image to
 
 ---
 
-## 🎯 **Why We Chose This Project**
+##  **Why We Chose This Project**
 
 * Agriculture is vital to India’s economy.
 * Farmers struggle to identify plant diseases early.
@@ -35,7 +35,7 @@ Our goal was to build a **real, workable solution** using modern machine learnin
 
 ---
 
-## 🧠 **What Is Few-Shot Learning?**
+##  **What Is Few-Shot Learning?**
 
 Few-Shot Learning allows models to learn from **very few examples** (1–10 images per class) while still maintaining good accuracy.
 This is perfect for plant diseases where large datasets are not available.
@@ -49,9 +49,9 @@ This multilevel structure reduces error propagation and boosts final accuracy.
 
 ---
 
-## 🏗️ **Architecture Overview**
+##  **Architecture Overview**
 
-### 🔹 **EfficientNet-B0 Backbone**
+###  **EfficientNet-B0 Backbone**
 
 EfficientNet-B0 is a fast, lightweight, and highly accurate CNN model developed by Google.
 We used it for:
@@ -64,7 +64,7 @@ Its compound scaling method improves performance without increasing compute cost
 
 ---
 
-# 📊 **Project Pipeline**
+#  **Project Pipeline**
 
 Below is a clear step-by-step explanation of the full workflow.
 
@@ -118,11 +118,11 @@ This increases dataset diversity.
 
 Main model performs:
 
-### 🔸 Level 1: Plant Type Prediction
+###  Level 1: Plant Type Prediction
 
 (e.g., Raspberry)
 
-### 🔸 Level 2: Disease Classification
+###  Level 2: Disease Classification
 
 (e.g., Leaf Spot, Healthy, Rust)
 
@@ -173,7 +173,7 @@ A user-friendly web interface was built using **Flask**:
 
 ---
 
-# 🌟 **Key Features**
+#  **Key Features**
 
 ✔ Multilevel plant & disease classification
 ✔ Works with very small datasets
@@ -185,7 +185,7 @@ A user-friendly web interface was built using **Flask**:
 
 ---
 
-# 📌 **Conclusion**
+#  **Conclusion**
 
 This project provides an end-to-end solution for plant disease detection using Few-Shot Learning. It combines:
 
