@@ -3,10 +3,6 @@
 
 ### Final Year Project — BE Computer Engineering (Data Science)
 
----
-**Note** - Change timer of layout.html if doesn't work or comment that lines respectively in that file
-For eg - <body id="page-top" data-load="1755263755"> to <body id="page-top">
-
 ##  **Project Overview**
 
 Plant diseases cause major crop losses every year, especially in rural areas where farmers may not have access to experts. Early and accurate disease detection can help prevent these losses. However:
