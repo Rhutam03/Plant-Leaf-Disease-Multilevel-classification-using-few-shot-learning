@@ -17,8 +17,6 @@ Our system first identifies the **plant type**, then predicts the **specific dis
 
 We also created a **Flask-based web app** where users can upload a leaf image to get instant predictions.
 
----
-
 ##  **Why We Chose This Project**
 
 * Agriculture is vital to India’s economy.
@@ -28,8 +26,6 @@ We also created a **Flask-based web app** where users can upload a leaf image to
 * Few-Shot Learning works extremely well when **data is scarce**.
 
 Our goal was to build a **real, workable solution** using modern machine learning techniques that can help farmers and agricultural communities.
-
----
 
 ##  **What Is Few-Shot Learning?**
 
@@ -42,8 +38,6 @@ We used a **Hierarchical Prototypical Network**, which performs classification a
 2. **Disease Classification**
 
 This multilevel structure reduces error propagation and boosts final accuracy.
-
----
 
 ##  **Architecture Overview**
 
@@ -58,20 +52,14 @@ We used it for:
 
 Its compound scaling method improves performance without increasing compute cost.
 
----
-
 #  **Project Pipeline**
 
 Below is a clear step-by-step explanation of the full workflow.
-
----
 
 ## **1. Data Collection & Image Acquisition**
 
 * Images were collected from public datasets (PlantVillage) and our custom dataset.
 * All images were organized class-wise for further processing.
-
----
 
 ## **2. Dataset Cleaning**
 
@@ -84,8 +72,6 @@ To ensure high-quality inputs:
 
 EfficientNet-B0 embeddings were used for similarity-based cleaning.
 
----
-
 ## **3. Few-Shot Split Creation**
 
 We simulated Few-Shot tasks such as:
@@ -93,8 +79,6 @@ We simulated Few-Shot tasks such as:
 10 images per folder respectively
 
 This prepares the model to classify diseases using **very few images** per class.
-
----
 
 ## **4. Preprocessing & Augmentation**
 
@@ -107,8 +91,6 @@ Applied transformations to improve generalization:
 * Color jitter
 
 This increases dataset diversity.
-
----
 
 ## **5. Hierarchical Prototypical Network Training**
 
@@ -150,7 +132,7 @@ A user-friendly web interface was built using **Flask**:
 
 ---
 
-# 💻 **Tech Stack**
+## **Tech Stack**
 
 ### **Machine Learning**
 
