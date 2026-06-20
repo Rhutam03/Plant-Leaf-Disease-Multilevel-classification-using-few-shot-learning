@@ -1,7 +1,7 @@
 
 # Plant Leaf Disease Multilevel Classification Using Few-Shot Learning
 
-### Final Year Project — BE Computer Engineering (Data Science)
+### Final Year Project 
 
 ##  **Project Overview**
 
