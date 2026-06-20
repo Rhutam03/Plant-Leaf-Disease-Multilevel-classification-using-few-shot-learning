@@ -106,7 +106,8 @@ Main model performs:
 
 Model learns prototype vectors for each class and uses distance-based classification in embedding space.
 
----
+
+
 
 ## **6. EfficientNet-B0 + Projection Head**
 
@@ -116,7 +117,6 @@ Model learns prototype vectors for each class and uses distance-based classifica
 
 Distance → determines final prediction.
 
----
 
 ## **7. Model Deployment (Flask Web App)**
 
@@ -130,7 +130,6 @@ A user-friendly web interface was built using **Flask**:
 * Includes **Login & Signup** system
 * Fully deployable, real-world ready
 
----
 
 ## **Tech Stack**
 
@@ -149,7 +148,7 @@ A user-friendly web interface was built using **Flask**:
 * HTML, CSS, JS
 * SQLite / MySQL
 
----
+
 
 #  **Key Features**
 
@@ -161,7 +160,7 @@ A user-friendly web interface was built using **Flask**:
 ✔ Real-time predictions
 ✔ Secure login/signup feature
 
----
+
 
 #  **Conclusion**
 
@@ -173,4 +172,3 @@ This project provides an end-to-end solution for plant disease detection using F
 
 The pipeline—from raw images to final predictions—shows how deep learning can solve practical problems even when data is limited.
 
--
