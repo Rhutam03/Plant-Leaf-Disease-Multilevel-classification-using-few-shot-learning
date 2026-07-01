@@ -82,7 +82,7 @@
                                     <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
                                 </a-->
                                 <div class="text-center text-danger">
-                                {{ error }}
+                                {% if error %}{{ error }}{% endif %}
                                 </div>
                             </form>
                             <hr>
