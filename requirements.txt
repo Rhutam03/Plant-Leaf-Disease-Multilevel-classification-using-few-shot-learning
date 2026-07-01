@@ -1,6 +1,6 @@
-numpy==1.24.3
-torch==2.0.1
-torchvision==0.15.2
-h5py==3.8.0
-Pillow==9.5.0
-Flask==2.2.5
+numpy==2.5.0
+torch==2.12.1
+torchvision==0.27.1
+h5py==3.16.0
+Pillow==12.2.0
+Flask==3.1.3

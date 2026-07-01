@@ -162,6 +162,30 @@ A user-friendly web interface was built using **Flask**:
 
 
 
+#  **Run Locally**
+
+The app is a self-contained Flask project. It works on macOS, Linux, and Windows with **Python 3.13**.
+
+```bash
+# 1. Create and activate a virtual environment
+python3.13 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Start the app
+python main.py
+```
+
+Then open **http://127.0.0.1:5000** in your browser.
+
+On first launch the EfficientNet-B0 backbone weights are downloaded automatically and the class prototypes are built from `fewshot_dataset/train`, so the initial startup takes a little longer. The trained model (`best_model.h5`) and the few-shot dataset are included in the repository, so no extra setup is required.
+
+> **Note:** paths are resolved relative to `main.py`, so the app can be run from any working directory.
+
+
+
 #  **Conclusion**
 
 This project provides an end-to-end solution for plant disease detection using Few-Shot Learning. It combines:

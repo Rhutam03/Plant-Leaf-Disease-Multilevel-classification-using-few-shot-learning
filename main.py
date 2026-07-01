@@ -14,9 +14,9 @@ from PIL import Image
 from flask import Flask, render_template, redirect, url_for, request, flash
 from pathlib import Path
 
-###############################################
+
 #       CPU Optimizations & Reproducibility
-###############################################
+
 os.environ["OMP_NUM_THREADS"] = "8"
 os.environ["MKL_NUM_THREADS"] = "8"
 torch.set_num_threads(8)
@@ -36,8 +36,9 @@ set_seed(42)
 ###############################################
 #       Few‑Shot Configuration & Classes
 ###############################################
-FEWSHOT_TRAIN_DIR    = Path(r"D:/fewshot_dataset/train")
-MODEL_WEIGHTS_H5     = "best_model.h5"
+BASE_DIR             = Path(__file__).resolve().parent
+FEWSHOT_TRAIN_DIR    = BASE_DIR / "fewshot_dataset" / "train"
+MODEL_WEIGHTS_H5     = str(BASE_DIR / "best_model.h5")
 DEVICE               = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 EMB_DIM              = 384
 SIMILARITY_THRESHOLD = 0.6
@@ -144,7 +145,7 @@ def predict_image_with_threshold(image, threshold=DIST_THRESHOLD):
 ###############################################
 #       SQLite DB Setup & Helpers
 ###############################################
-DB_PATH = "mydatabase.db"
+DB_PATH = str(BASE_DIR / "mydatabase.db")
 
 def init_db():
     con = sqlite3.connect(DB_PATH)
